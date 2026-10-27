@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 150 20% 98%;
+    --foreground: 160 40% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 160 40% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 40% 10%;
+
+    --primary: 158 64% 20%; /* Deep Emerald #0c563e */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 20% 94%;
+    --secondary-foreground: 158 64% 20%;
+
+    --muted: 150 15% 92%;
+    --muted-foreground: 160 10% 45%;
+
+    --accent: 38 92% 50%; /* Soft warm gold */
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 150 15% 88%;
+    --input: 150 15% 88%;
+    --ring: 158 64% 25%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 160 45% 6%;
+    --foreground: 150 20% 96%;
+
+    --card: 160 35% 10%;
+    --card-foreground: 150 20% 96%;
+
+    --popover: 160 35% 10%;
+    --popover-foreground: 150 20% 96%;
+
+    --primary: 155 55% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 160 25% 16%;
+    --secondary-foreground: 150 20% 96%;
+
+    --muted: 160 25% 16%;
+    --muted-foreground: 150 15% 65%;
+
+    --accent: 40 85% 55%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 160 25% 18%;
+    --input: 160 25% 18%;
+    --ring: 155 55% 42%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Islamic Geometric Subtile Ambient Pattern */
+.bg-islamic-pattern {
+  background-color: #064e3b;
+  background-image: radial-gradient(circle at 50% 50%, rgba(251, 191, 36, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-pattern-subtle {
+  background-image: radial-gradient(circle at 50% 50%, rgba(5, 150, 105, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Print Stylesheet for Financial Reports & Statements */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt;
+  }
+
+  header,
+  nav,
+  footer,
+  aside,
+  .no-print,
+  button,
+  .print-hidden {
+    display: none !important;
+  }
+
+  .print-container {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+  }
+
+  th, td {
+    border: 1px solid #d1d5db !important;
+    padding: 6px 10px !important;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+}
