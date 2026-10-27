@@ -82,7 +82,7 @@ Buka browser di: [http://localhost:3000](http://localhost:3000)
 Skrip migrasi database lengkap tersedia di folder `supabase/migrations/`:
 1. `01_initial_schema.sql` (Tabel profiles, mosque_settings, categories, transactions, activities, announcements, audit_logs)
 2. `02_rls_policies.sql` (Kebijakan Row Level Security ketat untuk tiap peran)
-3. `03_seed_demo_data.sql` (Data realistis demonstrasi Masjid Raya Al-Muhajirin)
+3. `03_seed_demo_data.sql` (Data realistis demonstrasi Masjid Nurul Huda)
 
 ### Langkah Setup Supabase:
 1. Buat project baru di [Supabase Dashboard](https://supabase.com).

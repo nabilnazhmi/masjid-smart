@@ -278,7 +278,16 @@ export function detectTransactionAnomalies(
 export const DataStore = {
   // Settings
   getSettings(): MosqueSettings {
-    return getItem(STORAGE_KEYS.SETTINGS, INITIAL_MOSQUE_SETTINGS);
+    const settings = getItem(STORAGE_KEYS.SETTINGS, INITIAL_MOSQUE_SETTINGS);
+    // Auto-migrate if old demo name was cached in browser localStorage
+    if (settings.mosque_name === 'Masjid Raya Al-Muhajirin' || !settings.mosque_name) {
+      settings.mosque_name = 'Masjid Nurul Huda';
+      settings.description = INITIAL_MOSQUE_SETTINGS.description;
+      settings.contact_email = 'sekretariat@nurulhuda.id';
+      settings.bank_account_holder = 'DKM Masjid Nurul Huda';
+      setItem(STORAGE_KEYS.SETTINGS, settings);
+    }
+    return settings;
   },
   saveSettings(settings: MosqueSettings): MosqueSettings {
     const updated = { ...settings, updated_at: new Date().toISOString() };

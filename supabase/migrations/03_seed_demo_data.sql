@@ -25,11 +25,11 @@ INSERT INTO public.mosque_settings (
     prayer_api_city
 ) VALUES (
     '00000000-0000-0000-0000-000000000001',
-    'Masjid Raya Al-Muhajirin',
+    'Masjid Nurul Huda',
     'Pusat Ibadah, Dakwah, dan Pemberdayaan Umat Modern Berbasis AI',
     'Jl. Kemang Raya No. 45, Mampang Prapatan, Jakarta Selatan, DKI Jakarta 12730',
     'Jakarta',
-    'Masjid Raya Al-Muhajirin merupakan pusat peradaban dan ibadah kaum muslimin yang berkomitmen pada transparansi manajemen, keterbukaan laporan keuangan, dan pemanfaatan teknologi kecerdasan buatan demi kenyamanan jamaah.',
+    'Masjid Nurul Huda merupakan pusat peradaban dan ibadah kaum muslimin yang berkomitmen pada transparansi manajemen, keterbukaan laporan keuangan, dan pemanfaatan teknologi kecerdasan buatan demi kenyamanan jamaah.',
     'Didirikan pada tahun 1998 atas inisiatif warga perumahan dan tokoh masyarakat setempat. Sejak renovasi besar pada tahun 2021, masjid ini kini memiliki kapasitas 1.500 jamaah dan dilengkapi sarana digital modern serta fasilitas ramah lansia dan disabilitas.',
     'Menjadi masjid yang mandiri, transparan, dan menjadi pelopor peradaban umat yang rahmatan lil alamin dengan teknologi digital.',
     '[
@@ -47,11 +47,11 @@ INSERT INTO public.mosque_settings (
         {"role": "Ketua Bidang Sosial & Yatim", "name": "Hj. Siti Aisyah, S.Pd", "phone": "0813-4455-6677"},
         {"role": "Koordinator Sarana & Marbot", "name": "Pak Sutrisno", "phone": "0857-7788-9900"}
     ]'::jsonb,
-    'sekretariat@almuhajirin.id',
+    'sekretariat@nurulhuda.id',
     '+62 812-3456-7890',
     'Bank Syariah Indonesia (BSI)',
     '7123-4567-89',
-    'DKM Masjid Raya Al-Muhajirin',
+    'DKM Masjid Nurul Huda',
     'Jakarta'
 ) ON CONFLICT (id) DO UPDATE SET
     mosque_name = EXCLUDED.mosque_name,
@@ -173,7 +173,7 @@ INSERT INTO public.announcements (
     (
         '55555555-0000-0000-0000-000000000001',
         'Laporan Transparansi Infaq & Kas Masjid Periode Berjalan',
-        'Alhamdulillah, seluruh rincian kas masuk dan keluar Masjid Raya Al-Muhajirin kini dapat dipantau langsung oleh jamaah melalui portal transparansi online dan papan digital masjid. Terima kasih atas amanah para muhsinin.',
+        'Alhamdulillah, seluruh rincian kas masuk dan keluar Masjid Nurul Huda kini dapat dipantau langsung oleh jamaah melalui portal transparansi online dan papan digital masjid. Terima kasih atas amanah para muhsinin.',
         'Keuangan',
         'normal',
         CURRENT_DATE - INTERVAL '2 days',
@@ -181,7 +181,7 @@ INSERT INTO public.announcements (
     ),
     (
         '55555555-0000-0000-0000-000000000002',
-        'Penerimaan Pendaftaran Santri Baru TPQ Al-Muhajirin',
+        'Penerimaan Pendaftaran Santri Baru TPQ Nurul Huda',
         'Dibuka pendaftaran calon santri baru Taman Pendidikan Al-Quran (TPQ) usia 5-12 tahun. Pembelajaran meliputi tahsin metode Ummi, hafalan juz 30, serta doa harian. Kuota terbatas 40 santri.',
         'Pendidikan',
         'normal',

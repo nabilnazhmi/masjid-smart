@@ -5,7 +5,7 @@ import { formatRupiah } from '@/lib/utils';
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { summaryData, mosqueName = 'Masjid Raya Al-Muhajirin' }: { summaryData: FinancialSummaryData; mosqueName?: string } = body;
+    const { summaryData, mosqueName = 'Masjid Nurul Huda' }: { summaryData: FinancialSummaryData; mosqueName?: string } = body;
 
     if (!summaryData) {
       return NextResponse.json({ error: 'Data keuangan deterministik diperlukan' }, { status: 400 });

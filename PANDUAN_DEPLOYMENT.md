@@ -67,7 +67,7 @@ Panduan lengkap ini menjelaskan langkah-langkah mendistribusikan (deploy) sistem
 
 4. **Klik "Deploy":**
    - Vercel akan otomatis meng-compile aplikasi Next.js dalam 1-2 menit.
-   - Setelah selesai, Anda akan mendapatkan domain production resmi gratis seperti `https://masjidsmart-ai.vercel.app` atau dapat memasang custom domain masjid (misal: `masjidalmuhajirin.id`).
+   - Setelah selesai, Anda akan mendapatkan domain production resmi gratis seperti `https://masjidsmart-ai.vercel.app` atau dapat memasang custom domain masjid (misal: `masjidnurulhuda.id`).
 
 ---
 

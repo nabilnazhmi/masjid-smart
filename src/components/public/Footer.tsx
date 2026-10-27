@@ -71,7 +71,7 @@ export function Footer() {
               <p className="font-mono text-base font-bold text-amber-300 tracking-wider">
                 7123-4567-89
               </p>
-              <p className="text-emerald-200 text-[11px]">a.n. DKM Masjid Raya Al-Muhajirin</p>
+              <p className="text-emerald-200 text-[11px]">a.n. DKM Masjid Nurul Huda</p>
               <div className="pt-2 text-[10px] text-emerald-300/80 border-t border-emerald-800/80 mt-2">
                 *Seluruh pemasukan dicatat transparan dan diaudit realtime oleh sistem.
               </div>
@@ -94,7 +94,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-amber-400 shrink-0" />
-                <span>sekretariat@almuhajirin.id</span>
+                <span>sekretariat@nurulhuda.id</span>
               </li>
             </ul>
           </div>

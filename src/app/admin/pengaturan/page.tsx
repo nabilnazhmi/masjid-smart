@@ -131,7 +131,7 @@ export default function AdminPengaturanPage() {
           Pemeliharaan Data Demonstrasi
         </h3>
         <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-          Jika Anda telah melakukan banyak penambahan atau pembatalan transaksi saat pengujian dan ingin mengembalikan aplikasi ke kondisi bersih awal (data demonstrasi Masjid Raya Al-Muhajirin), Anda dapat mereset data kapan saja.
+          Jika Anda telah melakukan banyak penambahan atau pembatalan transaksi saat pengujian dan ingin mengembalikan aplikasi ke kondisi bersih awal (data demonstrasi Masjid Nurul Huda), Anda dapat mereset data kapan saja.
         </p>
         <div>
           <Button

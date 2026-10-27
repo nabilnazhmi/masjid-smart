@@ -279,7 +279,7 @@ export default function AdminProfilPage() {
               </label>
               <input
                 type="text"
-                placeholder="DKM Masjid Raya Al-Muhajirin"
+                placeholder="DKM Masjid Nurul Huda"
                 value={bankAccountHolder}
                 onChange={(e) => setBankAccountHolder(e.target.value)}
                 className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg px-3 py-2 text-xs focus:ring-2 focus:ring-emerald-700"

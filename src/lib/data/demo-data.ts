@@ -2,11 +2,11 @@ import { MosqueSettings, TransactionCategory, Transaction, Activity, Announcemen
 
 export const INITIAL_MOSQUE_SETTINGS: MosqueSettings = {
   id: '00000000-0000-0000-0000-000000000001',
-  mosque_name: 'Masjid Raya Al-Muhajirin',
+  mosque_name: 'Masjid Nurul Huda',
   tagline: 'Pusat Ibadah, Dakwah, dan Pemberdayaan Umat Modern Berbasis AI',
   address: 'Jl. Kemang Raya No. 45, Mampang Prapatan, Jakarta Selatan, DKI Jakarta 12730',
   city: 'Jakarta',
-  description: 'Masjid Raya Al-Muhajirin merupakan pusat peradaban dan ibadah kaum muslimin yang berkomitmen pada transparansi manajemen, keterbukaan laporan keuangan donasi umat, dan pemanfaatan teknologi digital demi kenyamanan ibadah jamaah.',
+  description: 'Masjid Nurul Huda merupakan pusat peradaban dan ibadah kaum muslimin yang berkomitmen pada transparansi manajemen, keterbukaan laporan keuangan donasi umat, dan pemanfaatan teknologi digital demi kenyamanan ibadah jamaah.',
   history: 'Didirikan pada tahun 1998 atas inisiatif warga perumahan dan tokoh masyarakat setempat. Sejak renovasi besar pada tahun 2021, masjid ini kini memiliki kapasitas 1.500 jamaah dan dilengkapi sarana digital modern serta fasilitas ramah lansia dan disabilitas.',
   vision: 'Menjadi masjid yang mandiri, transparan, dan menjadi pelopor peradaban umat yang rahmatan lil alamin dengan teknologi digital.',
   mission: [
@@ -24,11 +24,11 @@ export const INITIAL_MOSQUE_SETTINGS: MosqueSettings = {
     { role: 'Ketua Bidang Sosial & Yatim', name: 'Hj. Siti Aisyah, S.Pd', phone: '0813-4455-6677' },
     { role: 'Koordinator Sarana & Marbot', name: 'Pak Sutrisno', phone: '0857-7788-9900' },
   ],
-  contact_email: 'sekretariat@almuhajirin.id',
+  contact_email: 'sekretariat@nurulhuda.id',
   contact_phone: '+62 812-3456-7890',
   bank_name: 'Bank Syariah Indonesia (BSI)',
   bank_account_number: '7123-4567-89',
-  bank_account_holder: 'DKM Masjid Raya Al-Muhajirin',
+  bank_account_holder: 'DKM Masjid Nurul Huda',
   prayer_api_city: 'Jakarta',
   updated_at: new Date().toISOString(),
 };
@@ -276,7 +276,7 @@ export const INITIAL_ACTIVITIES: Activity[] = [
     title: 'Pelatihan Pengurusan Jenazah Sesuai Sunnah',
     category: 'Workshop Keislaman',
     description: 'Pelatihan praktis dan langsung tata cara memandikan, mengafani, dan menyalatkan jenazah lengkap dengan modul dan sertifikat.',
-    speaker: 'Tim Fardhu Kifayah DKM Al-Muhajirin',
+    speaker: 'Tim Fardhu Kifayah DKM Nurul Huda',
     location: 'Aula Serbaguna Lt. 2',
     start_time: '2026-11-03T08:30:00+07:00',
     end_time: '2026-11-03T12:00:00+07:00',
@@ -302,7 +302,7 @@ export const INITIAL_ANNOUNCEMENTS: Announcement[] = [
   {
     id: 'ann-001',
     title: 'Laporan Transparansi Infaq & Kas Masjid Periode Oktober 2026',
-    content: 'Alhamdulillah, seluruh rincian kas masuk dan keluar Masjid Raya Al-Muhajirin kini dapat dipantau langsung oleh jamaah melalui portal transparansi online dan papan digital masjid. Terima kasih atas amanah para muhsinin.',
+    content: 'Alhamdulillah, seluruh rincian kas masuk dan keluar Masjid Nurul Huda kini dapat dipantau langsung oleh jamaah melalui portal transparansi online dan papan digital masjid. Terima kasih atas amanah para muhsinin.',
     category: 'Keuangan',
     priority: 'normal',
     published_at: '2026-10-25T08:00:00+07:00',
@@ -310,7 +310,7 @@ export const INITIAL_ANNOUNCEMENTS: Announcement[] = [
   },
   {
     id: 'ann-002',
-    title: 'Penerimaan Pendaftaran Santri Baru TPQ Al-Muhajirin Angkatan IX',
+    title: 'Penerimaan Pendaftaran Santri Baru TPQ Nurul Huda Angkatan IX',
     content: 'Dibuka pendaftaran calon santri baru Taman Pendidikan Al-Quran (TPQ) usia 5-12 tahun. Pembelajaran meliputi tahsin metode Ummi, hafalan juz 30, serta doa harian. Kuota terbatas 40 santri.',
     category: 'Pendidikan',
     priority: 'normal',
