@@ -10,8 +10,8 @@ export function PrayerTimesBar() {
   const [nextPrayer, setNextPrayer] = useState<{ name: string; time: string } | null>(null);
 
   useEffect(() => {
-    // Fetch prayer times
-    fetch('/api/prayer-times?city=Jakarta')
+    // Fetch prayer times for Bogor / Jonggol
+    fetch('/api/prayer-times?city=Bogor')
       .then((res) => res.json())
       .then((data: PrayerTimes) => {
         setPrayerTimes(data);

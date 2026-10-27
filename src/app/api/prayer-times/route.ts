@@ -3,23 +3,23 @@ import { PrayerTimes } from '@/types/database';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const city = searchParams.get('city') || 'Jakarta';
+  const city = searchParams.get('city') || process.env.NEXT_PUBLIC_PRAYER_CITY || 'Bogor';
   const country = 'Indonesia';
 
-  // Offline default fallback prayer schedule for Jakarta/WIB
+  // Offline default calibrated schedule for Bogor / Jonggol WIB
   const today = new Date();
   const dateFormatted = today.toISOString().split('T')[0];
 
   const defaultSchedule: PrayerTimes = {
     date: dateFormatted,
-    imsak: '04:09',
-    fajr: '04:19',
-    sunrise: '05:35',
-    dhuhr: '11:46',
-    asr: '14:58',
-    maghrib: '17:53',
-    isha: '19:04',
-    locationName: `${city}, Indonesia`,
+    imsak: '04:10',
+    fajr: '04:20',
+    sunrise: '05:36',
+    dhuhr: '11:47',
+    asr: '14:59',
+    maghrib: '17:54',
+    isha: '19:05',
+    locationName: `${city === 'Bogor' ? 'Jonggol, Kab. Bogor' : city}, Indonesia`,
   };
 
   try {
@@ -43,12 +43,12 @@ export async function GET(request: Request) {
           asr: timings.Asr?.slice(0, 5) || defaultSchedule.asr,
           maghrib: timings.Maghrib?.slice(0, 5) || defaultSchedule.maghrib,
           isha: timings.Isha?.slice(0, 5) || defaultSchedule.isha,
-          locationName: `${city}, Indonesia`,
+          locationName: `${city === 'Bogor' ? 'Jonggol, Kab. Bogor' : city}, Indonesia`,
         });
       }
     }
   } catch (error) {
-    console.warn('External prayer times API unavailable, using calibrated Indonesian schedule:', error);
+    console.warn('External prayer times API unavailable, using calibrated schedule:', error);
   }
 
   return NextResponse.json(defaultSchedule);

@@ -27,10 +27,10 @@ INSERT INTO public.mosque_settings (
     '00000000-0000-0000-0000-000000000001',
     'Masjid Nurul Huda',
     'Pusat Ibadah, Dakwah, dan Pemberdayaan Umat Modern Berbasis AI',
-    'Jl. Kemang Raya No. 45, Mampang Prapatan, Jakarta Selatan, DKI Jakarta 12730',
-    'Jakarta',
-    'Masjid Nurul Huda merupakan pusat peradaban dan ibadah kaum muslimin yang berkomitmen pada transparansi manajemen, keterbukaan laporan keuangan, dan pemanfaatan teknologi kecerdasan buatan demi kenyamanan jamaah.',
-    'Didirikan pada tahun 1998 atas inisiatif warga perumahan dan tokoh masyarakat setempat. Sejak renovasi besar pada tahun 2021, masjid ini kini memiliki kapasitas 1.500 jamaah dan dilengkapi sarana digital modern serta fasilitas ramah lansia dan disabilitas.',
+    'Sukanegara, Kec. Jonggol, Kabupaten Bogor, Jawa Barat 16830 (Plus Code: F2CP+V9H)',
+    'Bogor',
+    'Masjid Nurul Huda merupakan pusat peradaban dan ibadah kaum muslimin di wilayah Sukanegara, Jonggol yang berkomitmen pada transparansi manajemen, keterbukaan laporan keuangan, dan pemanfaatan teknologi kecerdasan buatan demi kenyamanan jamaah.',
+    'Didirikan atas inisiatif warga Desa Sukanegara dan para tokoh masyarakat muslim Jonggol. Masjid ini menjadi pusat kegiatan ibadah berjamaah, pembinaan akhlak anak-anak TPQ, serta penyaluran bantuan sosial bagi dhuafa di wilayah sekitar Jonggol.',
     'Menjadi masjid yang mandiri, transparan, dan menjadi pelopor peradaban umat yang rahmatan lil alamin dengan teknologi digital.',
     '[
         "Menyelenggarakan ibadah salat fardhu dan kegiatan keagamaan secara rutin dan khidmat",
@@ -52,7 +52,7 @@ INSERT INTO public.mosque_settings (
     'Bank Syariah Indonesia (BSI)',
     '7123-4567-89',
     'DKM Masjid Nurul Huda',
-    'Jakarta'
+    'Bogor'
 ) ON CONFLICT (id) DO UPDATE SET
     mosque_name = EXCLUDED.mosque_name,
     tagline = EXCLUDED.tagline,
@@ -92,7 +92,7 @@ INSERT INTO public.transactions (
     -- Bulan Lalu (Pengeluaran)
     ('33333333-0000-0000-0000-000000000005', CURRENT_DATE - INTERVAL '30 days', 'expense', '22222222-0000-0000-0000-000000000001', 2850000, 'Tagihan Listrik PLN 3 Phase Bulan Lalu', 'PLN UID Jaya', 'TRX-OUT-001', 'approved', true),
     ('33333333-0000-0000-0000-000000000006', CURRENT_DATE - INTERVAL '27 days', 'expense', '22222222-0000-0000-0000-000000000002', 5000000, 'Mukafaah 2 Marbot & 1 Muadzin Bulan Lalu', 'Petugas DKM', 'TRX-OUT-002', 'approved', true),
-    ('33333333-0000-0000-0000-000000000007', CURRENT_DATE - INTERVAL '25 days', 'expense', '22222222-0000-0000-0000-000000000004', 6000000, 'Penyaluran Santunan 20 Anak Yatim Binaan', 'Anak Yatim Kemang', 'TRX-OUT-003', 'approved', true),
+    ('33333333-0000-0000-0000-000000000007', CURRENT_DATE - INTERVAL '25 days', 'expense', '22222222-0000-0000-0000-000000000004', 6000000, 'Penyaluran Santunan 20 Anak Yatim Binaan', 'Anak Yatim Jonggol', 'TRX-OUT-003', 'approved', true),
     
     -- Bulan Ini (Pemasukan)
     ('33333333-0000-0000-0000-000000000008', CURRENT_DATE - INTERVAL '14 days', 'income', '11111111-0000-0000-0000-000000000001', 7150000, 'Kotak Infaq Salat Jumat Pekan 1', 'Jamaah Jumat', 'TRX-IN-005', 'approved', true),
@@ -102,7 +102,7 @@ INSERT INTO public.transactions (
     ('33333333-0000-0000-0000-000000000012', CURRENT_DATE - INTERVAL '1 days', 'income', '11111111-0000-0000-0000-000000000002', 2100000, 'Sedekah Jamaah Pengajian Akhir Pekan', 'Keluarga Jamaah', 'TRX-IN-009', 'approved', true),
 
     -- Bulan Ini (Pengeluaran)
-    ('33333333-0000-0000-0000-000000000013', CURRENT_DATE - INTERVAL '12 days', 'expense', '22222222-0000-0000-0000-000000000001', 3120000, 'Tagihan Listrik PLN Gedung Utama Bulan Berjalan', 'PLN Rayon Mampang', 'TRX-OUT-004', 'approved', true),
+    ('33333333-0000-0000-0000-000000000013', CURRENT_DATE - INTERVAL '12 days', 'expense', '22222222-0000-0000-0000-000000000001', 3120000, 'Tagihan Listrik PLN Gedung Utama Bulan Berjalan', 'PLN ULP Jonggol', 'TRX-OUT-004', 'approved', true),
     ('33333333-0000-0000-0000-000000000014', CURRENT_DATE - INTERVAL '9 days', 'expense', '22222222-0000-0000-0000-000000000003', 1500000, 'Mukafaah Kajian Bulanan Ustadz Tamu', 'Ustadz Pemateri', 'TRX-OUT-005', 'approved', true),
     ('33333333-0000-0000-0000-000000000015', CURRENT_DATE - INTERVAL '5 days', 'expense', '22222222-0000-0000-0000-000000000005', 4750000, 'Servis 6 Unit AC dan Penggantian Kabel Sound System', 'CV Sejuk Bersama', 'TRX-OUT-006', 'approved', true),
     ('33333333-0000-0000-0000-000000000016', CURRENT_DATE - INTERVAL '2 days', 'expense', '22222222-0000-0000-0000-000000000006', 850000, 'Konsumsi dan Air Mineral Kajian Shubuh Ceria', 'Toko Berkah Snack', 'TRX-OUT-007', 'approved', true)

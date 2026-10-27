@@ -279,10 +279,18 @@ export const DataStore = {
   // Settings
   getSettings(): MosqueSettings {
     const settings = getItem(STORAGE_KEYS.SETTINGS, INITIAL_MOSQUE_SETTINGS);
-    // Auto-migrate if old demo name was cached in browser localStorage
-    if (settings.mosque_name === 'Masjid Raya Al-Muhajirin' || !settings.mosque_name) {
+    // Auto-migrate if old demo name or old address was cached in browser localStorage
+    if (
+      settings.mosque_name === 'Masjid Raya Al-Muhajirin' ||
+      !settings.mosque_name ||
+      settings.address?.includes('Kemang')
+    ) {
       settings.mosque_name = 'Masjid Nurul Huda';
+      settings.address = 'Sukanegara, Kec. Jonggol, Kabupaten Bogor, Jawa Barat 16830 (Plus Code: F2CP+V9H)';
+      settings.city = 'Bogor';
+      settings.prayer_api_city = 'Bogor';
       settings.description = INITIAL_MOSQUE_SETTINGS.description;
+      settings.history = INITIAL_MOSQUE_SETTINGS.history;
       settings.contact_email = 'sekretariat@nurulhuda.id';
       settings.bank_account_holder = 'DKM Masjid Nurul Huda';
       setItem(STORAGE_KEYS.SETTINGS, settings);

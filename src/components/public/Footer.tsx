@@ -86,7 +86,7 @@ export function Footer() {
             <ul className="space-y-3 text-xs text-emerald-200/80">
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                <span>Jl. Kemang Raya No. 45, Mampang Prapatan, Jakarta Selatan 12730</span>
+                <span>Sukanegara, Kec. Jonggol, Kabupaten Bogor, Jawa Barat 16830</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-amber-400 shrink-0" />
